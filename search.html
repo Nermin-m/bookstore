@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <link rel="stylesheet" href="search/search.css">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="search/search.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="search/joinus.js" defer type="module"></script>
+    <script src="search/firebase.js" defer type="module"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-menu">
+            <div class="logo">
+                <img src="./search/icon/Book.svg" alt="Book Icon">
+            </div>
+            <nav class="nav-ul">
+                <ul class="list">
+
+                    <li> <a href="./index.html"> home</a></li>
+                    <li><a href="./catalog.html">catalog</a></li>
+                    <li><a href="./about.html">about store</a></li>
+                    <li><a href="./contact.html">contact us</a></li>
+                    <li><a href="./search.html" id="search-li"> search</a></li>
+
+                </ul>
+            </nav>
+            <div class="client">
+                <img class="joinus-logo" src="./search/icon/Profile.svg" alt="Profile Icon">
+                <div class="hamburger">
+                    <img src="search/icon/hamburger.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pop-up-back">
+            <div class="pop-up">
+                <span id="closePopup">&times;</span>
+                <p class="pop-up-title">Join us</p>
+                <input placeholder="Full Name" class="fullname"> <br>
+                <input placeholder="Email" class="email"> <br>
+                <button class="join-button">Join</button>
+            </div>
+        </div>
+        
+        <div class="main">
+            <section class="left-side">
+                <form action="" id="inp-form">
+                    <p id="search-title">Search</p>
+                    <input type="text" placeholder="Order in Chaos" id="search-book">
+                    <button id="search-btn">Search</button>
+                </form>
+            </section>
+            <section class="right-side">
+                <!-- ?Slider Swiper -->
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                    </div>
+                    <div class="swiper-button-prev">
+
+                    </div>
+                    <div class="swiper-button-next">
+
+                    </div>
+                </div>
+                <!-- ?Slider Swiper -->
+            </section>
+        </div>
+        <div class="social-media">
+            <p class="txt">Follow us on social media</p>
+            <div class="links">
+                <div class="link"><a href=""><img src="./search/icon/fb.svg" alt="Facebook" title="Facebook"></a></div>
+                <div class="link"><a href=""><img src="./search/icon/tv.svg" alt="Twitter" title="Twitter"></a></div>
+                <div class="link"><a href=""><img src="./search/icon/inst.svg" alt="Instagram" title="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="foter">
+        <div class="foot">
+            <div class="left">
+                <img class="foot-logo" src="./search/icon/Book2.svg">
+            </div>
+            <div class="right">
+                <div class="one">
+                    <p>Popular</p>
+                    <p>Programming</p>
+                    <p>Books for children</p>
+                    <p>Business</p>
+                </div>
+                <div class="two">
+                    <p>Cash</p>
+                    <p>Delivery</p>
+                    <p>Payment</p>
+                    <p>About the store</p>
+                </div>
+                <div class="three">
+                    <p>Help</p>
+                    <p>Contacts</p>
+                    <p>Purchase returns</p>
+                    <p>Buyer help</p>
+                </div>
+                <div class="four">
+                    <p>+38 (071) 339-16-26</p>
+                    <p id="request">Request a call</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <p id="end-txt">All rights reserved © 2003-2021 LIBRARY TERMS OF USE | Privacy Policy</p>
+</body>
+
+</html>
